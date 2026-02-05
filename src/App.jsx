@@ -120,7 +120,7 @@ const translations = {
     nav: {
       home: '首页',
       about: '关于WAU',
-      waus: 'WAUS',
+      waus: '注册Agent',
       wauc: 'WAUC'
     },
     home: {
@@ -145,9 +145,9 @@ const translations = {
       },
       modulesTitle: '探索 WAU 生态',
       modulesDesc: '两大核心模块，构建完整的 Agent 生态系统',
-      wausTitle: 'WAUS',
+      wausTitle: '注册 Agent',
       wausShort: 'Whis Agent Universe Singularity',
-      wausDesc: 'Agent 奇点 - 汇聚各类先进 Agent，打造智能体核心枢纽，提供最前沿的 AI 能力支持。',
+      wausDesc: '注册你的 AI Agent，加入 WAU 生态系统，让更多用户发现并使用你的智能体。',
       waucTitle: 'WAUC',
       waucShort: 'Whis Agent Universe Center',
       waucDesc: 'Agent 中心 - 全局 Agent 协调与管理平台，实现跨 Agent 的任务分配与协作。'
@@ -175,24 +175,89 @@ const translations = {
       frameworks: '支持的开发框架'
     },
     waus: {
-      badge: 'WAUS',
-      title: 'Whis Agent Universe',
-      subtitle: 'Singularity',
-      desc: 'Agent 奇点 — 汇聚最前沿的 AI Agent，打造智能体核心枢纽',
-      featuresTitle: '核心能力',
-      featuredAgents: '精选 Agent',
-      agentList: [
-        { name: 'CodeMaster Pro', type: '编程助手', status: '在线', tags: ['代码生成', '调试', '重构'] },
-        { name: 'DataInsight', type: '数据分析', status: '在线', tags: ['可视化', '统计分析'] },
-        { name: 'ResearchBuddy', type: '研究助手', status: '在线', tags: ['文献搜索', '总结'] },
-        { name: 'CreativeGen', type: '创意生成', status: '在线', tags: ['文案', '设计', '视频'] }
-      ],
-      stats: [
-        { value: '1000+', label: '活跃 Agent' },
-        { value: '50+', label: '能力类别' },
-        { value: '99.9%', label: '可用性' },
-        { value: '<50ms', label: '平均延迟' }
-      ]
+      badge: '注册 Agent',
+      title: '注册你的 AI Agent',
+      subtitle: '加入 WAU 生态系统',
+      desc: '通过 URL 自动发现 A2A Agent Card，快速将你的 Agent 注册到 WAU 网络',
+      formTitle: 'Agent Card 注册',
+      urlPlaceholder: '输入 Agent URL 地址',
+      urlBtn: '获取 Agent Card',
+      // A2A 版本
+      a2aVersion: 'A2A 版本',
+      // 核心身份区
+      identityTitle: '核心身份',
+      identityDesc: 'Agent 的唯一标识信息',
+      agentName: 'Agent 名称',
+      agentId: 'Agent ID',
+      version: '版本号',
+      verified: '已验证',
+      // 能力画像区
+      capabilitiesTitle: '能力与技能',
+      capabilitiesDesc: '定义 Agent 的核心能力和专长领域',
+      descriptionLabel: '描述',
+      descriptionPlaceholder: '描述你的 Agent 能做什么，有哪些独特能力...',
+      descriptionHint: '这段话会被转换成向量存入数据库，用于搜索匹配',
+      tagsLabel: '标签',
+      tagsPlaceholder: '输入标签，用逗号分隔',
+      tagsHint: '添加标签有助于用户发现你的 Agent',
+      addTag: '添加标签',
+      // A2A 特有字段
+      capabilitiesLabel: 'Agent 能力',
+      inputModesLabel: '输入模式',
+      outputModesLabel: '输出模式',
+      skillsTitle: '技能列表',
+      skillsLabel: '技能',
+      skillsDesc: '定义 Agent 的具体技能和能力',
+      skillName: '技能名称',
+      skillDesc: '技能描述',
+      skillExamples: '使用示例',
+      // 认证与隐私
+      authTitle: '认证与隐私',
+      authDesc: '配置 Agent 的安全设置',
+      authType: '认证类型',
+      authDescription: '认证说明',
+      dataRetention: '数据保留',
+      logPolicy: '日志策略',
+      // 元数据
+      metadataTitle: '元数据',
+      metadataDesc: 'Agent 的附加信息',
+      author: '作者',
+      website: '官网',
+      documentation: '文档链接',
+      updated: '更新时间',
+      // 商业契约区
+      businessTitle: '商业设置',
+      businessDesc: '配置 Agent 的服务条款（可选）',
+      priceLabel: '调用单价',
+      priceUnit: 'Token',
+      priceHint: '价格越低，初始信任分越高',
+      slaLabel: '可用性承诺 (SLA)',
+      slaHint: 'SLA 越高，初始信任分越高',
+      slaPercent: '%',
+      // 技术连接区
+      technicalTitle: '技术连接',
+      technicalDesc: '确认 Agent 的交互地址',
+      endpointLabel: '交互地址',
+      urlLabel: 'Agent URL',
+      // 按钮
+      submitBtn: '确认注册',
+      registering: '注册中...',
+      cancelBtn: '取消',
+      // 状态
+      successTitle: '注册成功！',
+      successDesc: '你的 Agent 已成功注册到 WAU 网络，正在进行红队测试...',
+      taskId: '任务 ID',
+      status: '状态',
+      pending: '等待处理',
+      processing: '处理中',
+      completed: '已完成',
+      failed: '失败',
+      viewAgent: '查看 Agent',
+      back: '返回',
+      errorDiscovery: '无法发现 Agent Card，请检查 URL 是否正确',
+      errorRegister: '注册失败，请稍后重试',
+      formTitleDetails: 'Agent 详细信息',
+      required: '必填'
     },
     wauc: {
       badge: 'WAUC',
@@ -253,7 +318,7 @@ const translations = {
     nav: {
       home: 'Home',
       about: 'About WAU',
-      waus: 'WAUS',
+      waus: 'Register Agent',
       wauc: 'WAUC'
     },
     home: {
@@ -278,9 +343,9 @@ const translations = {
       },
       modulesTitle: 'Explore WAU Ecosystem',
       modulesDesc: 'Two core modules building a complete Agent ecosystem',
-      wausTitle: 'WAUS',
+      wausTitle: 'Register Agent',
       wausShort: 'Whis Agent Universe Singularity',
-      wausDesc: 'Agent Singularity — Gathering cutting-edge AI Agents to create an Agent core hub with the most advanced AI capabilities.',
+      wausDesc: 'Register your AI Agent and join the WAU ecosystem, allowing more users to discover and use your intelligent Agent.',
       waucTitle: 'WAUC',
       waucShort: 'Whis Agent Universe Center',
       waucDesc: 'Agent Center — Global Agent coordination and management platform for cross-Agent task allocation and collaboration.'
@@ -308,24 +373,89 @@ const translations = {
       frameworks: 'Supported Development Frameworks'
     },
     waus: {
-      badge: 'WAUS',
-      title: 'Whis Agent Universe',
-      subtitle: 'Singularity',
-      desc: 'Agent Singularity — Gathering cutting-edge AI Agents to create an Agent core hub',
-      featuresTitle: 'Core Capabilities',
-      featuredAgents: 'Featured Agents',
-      agentList: [
-        { name: 'CodeMaster Pro', type: 'Coding Assistant', status: 'Online', tags: ['Code Generation', 'Debugging', 'Refactoring'] },
-        { name: 'DataInsight', type: 'Data Analysis', status: 'Online', tags: ['Visualization', 'Statistics'] },
-        { name: 'ResearchBuddy', type: 'Research Assistant', status: 'Online', tags: ['Literature Search', 'Summarization'] },
-        { name: 'CreativeGen', type: 'Creative Generation', status: 'Online', tags: ['Copywriting', 'Design', 'Video'] }
-      ],
-      stats: [
-        { value: '1000+', label: 'Active Agents' },
-        { value: '50+', label: 'Capability Categories' },
-        { value: '99.9%', label: 'Uptime' },
-        { value: '<50ms', label: 'Avg Latency' }
-      ]
+      badge: 'Register Agent',
+      title: 'Register Your AI Agent',
+      subtitle: 'Join the WAU Ecosystem',
+      desc: 'Auto-discover A2A Agent Card via URL to quickly register your Agent on the WAU network',
+      formTitle: 'Agent Card Registration',
+      urlPlaceholder: 'Enter Agent URL',
+      urlBtn: 'Get Agent Card',
+      // A2A Version
+      a2aVersion: 'A2A Version',
+      // Core Identity
+      identityTitle: 'Core Identity',
+      identityDesc: 'Unique identification information for the Agent',
+      agentName: 'Agent Name',
+      agentId: 'Agent ID',
+      version: 'Version',
+      verified: 'Verified',
+      // Capabilities
+      capabilitiesTitle: 'Capabilities & Skills',
+      capabilitiesDesc: 'Define your Agent\'s core capabilities and specialties',
+      descriptionLabel: 'Description',
+      descriptionPlaceholder: 'Describe what your Agent does and its unique capabilities...',
+      descriptionHint: 'This text will be converted to vectors and stored in the database for search matching',
+      tagsLabel: 'Tags',
+      tagsPlaceholder: 'Enter tags, separated by commas',
+      tagsHint: 'Adding tags helps users discover your Agent',
+      addTag: 'Add Tag',
+      // A2A Specific Fields
+      capabilitiesLabel: 'Agent Capabilities',
+      inputModesLabel: 'Input Modes',
+      outputModesLabel: 'Output Modes',
+      skillsTitle: 'Skills List',
+      skillsLabel: 'Skills',
+      skillsDesc: 'Define specific skills and capabilities of the Agent',
+      skillName: 'Skill Name',
+      skillDesc: 'Skill Description',
+      skillExamples: 'Examples',
+      // Authentication & Privacy
+      authTitle: 'Authentication & Privacy',
+      authDesc: 'Configure Agent security settings',
+      authType: 'Authentication Type',
+      authDescription: 'Authentication Description',
+      dataRetention: 'Data Retention',
+      logPolicy: 'Log Policy',
+      // Metadata
+      metadataTitle: 'Metadata',
+      metadataDesc: 'Additional information about the Agent',
+      author: 'Author',
+      website: 'Website',
+      documentation: 'Documentation',
+      updated: 'Last Updated',
+      // Business & SLA
+      businessTitle: 'Business Settings',
+      businessDesc: 'Configure Agent service terms (optional)',
+      priceLabel: 'Price per Call',
+      priceUnit: 'Token',
+      priceHint: 'Lower price = higher initial Trust Score',
+      slaLabel: 'SLA (Uptime)',
+      slaHint: 'Higher SLA = higher initial Trust Score',
+      slaPercent: '%',
+      // Technical
+      technicalTitle: 'Technical Connection',
+      technicalDesc: 'Confirm the Agent\'s interaction endpoint',
+      endpointLabel: 'Endpoint',
+      urlLabel: 'Agent URL',
+      // Buttons
+      submitBtn: 'Confirm Registration',
+      registering: 'Registering...',
+      cancelBtn: 'Cancel',
+      // Status
+      successTitle: 'Registration Successful!',
+      successDesc: 'Your Agent has been registered on the WAU network, red team testing in progress...',
+      taskId: 'Task ID',
+      status: 'Status',
+      pending: 'Pending',
+      processing: 'Processing',
+      completed: 'Completed',
+      failed: 'Failed',
+      viewAgent: 'View Agent',
+      back: 'Back',
+      errorDiscovery: 'Unable to discover Agent Card, please check if the URL is correct',
+      errorRegister: 'Registration failed, please try again later',
+      formTitleDetails: 'Agent Details',
+      required: 'Required'
     },
     wauc: {
       badge: 'WAUC',
@@ -861,84 +991,646 @@ const AboutWAU = ({ t }) => (
   </div>
 );
 
-// WAUS 页面
-const WAUSPage = ({ t }) => (
-  <div className="min-h-screen pt-24">
-    <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-wau-primary/20 to-wau-secondary/20 border border-wau-primary/30 text-wau-primary text-sm mb-6">
-            <Sparkles className="w-4 h-4" />
-            <span>{t.waus.badge}</span>
-          </div>
-          <h1 className="text-5xl font-bold text-white mb-6">
-            {t.waus.title}
-            <span className="text-gradient">{t.waus.subtitle}</span>
-          </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">{t.waus.desc}</p>
-        </div>
+// WAUS 页面 - 注册 Agent
+// A2A Agent Card 注册控制台页面
+const WAUSPage = ({ t }) => {
+  const [step, setStep] = useState('discovery'); // discovery, confirm, processing
+  const [loading, setLoading] = useState(false);
+  const [targetUrl, setTargetUrl] = useState('');
+  const [error, setError] = useState(null);
+  const [agentData, setAgentData] = useState(null);
+  const [logs, setLogs] = useState([]);
+  const [taskId, setTaskId] = useState(null);
+  const [taskStatus, setTaskStatus] = useState(null);
+  const [success, setSuccess] = useState(false);
+  const [isRegistering, setIsRegistering] = useState(false);
+  const [formData, setFormData] = useState({
+    a2aVersion: '1.0.0',
+    id: '',
+    name: '',
+    description: '',
+    version: '',
+    url: '',
+    capabilities: [],
+    defaultInputModes: [],
+    defaultOutputModes: [],
+    skills: [],
+    authentication: { type: '', description: '' },
+    privacy: { dataRetention: '', logPolicy: '' },
+    metadata: { author: '', website: '', documentation: '', updated: '' },
+    tags: [],
+    price: 0,
+    currency: 'USD',
+    sla: 0.99,
+    domain: 'General'
+  });
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {[
-            { title: 'Multi-Modal', desc: 'Support for text, image, voice, video and more', icon: '🎨' },
-            { title: 'Advanced Reasoning', desc: 'Chain-of-thought, tree-of-thought strategies', icon: '🧠' },
-            { title: 'Tool Ecosystem', desc: 'Hundreds of tools for coding, search, analysis', icon: '🛠️' },
-            { title: 'Continuous Learning', desc: 'Agents learn from interactions', icon: '📈' },
-            { title: 'Collaborative Orchestration', desc: 'Multiple agents work together', icon: '🤝' },
-            { title: 'High Performance', desc: 'Optimized engine for ms responses', icon: '⚡' }
-          ].map((feature, i) => (
-            <div key={i} className="glass-card p-8 rounded-2xl group hover:border-wau-primary/30 transition-all animate-slide-up" style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-gray-400">{feature.desc}</p>
+  // 定义后端地址
+  const API_BASE = 'http://192.168.110.70:9090/api/v1';
+
+  const addLog = (msg, type = 'info') => {
+    const time = new Date().toLocaleTimeString('zh-CN', { hour12: false });
+    setLogs(prev => [...prev, { time, msg, type }]);
+  };
+
+  const handleDiscovery = async () => {
+    if (!targetUrl) {
+      setError(t.waus.errorDiscovery);
+      return;
+    }
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch(`${API_BASE}/discover`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: targetUrl })
+      });
+
+      if (!res.ok) throw new Error(t.waus.errorDiscovery);
+
+      const data = await res.json();
+      console.log('A2A Agent Card:', data);
+
+      setAgentData(data);
+      setFormData({
+        a2aVersion: data.a2aVersion || '1.0.0',
+        id: data.id || data.agent_id || '',
+        name: data.name || '',
+        description: data.description || '',
+        version: data.version || '',
+        url: data.url || targetUrl,
+        capabilities: data.capabilities || [],
+        defaultInputModes: data.defaultInputModes || [],
+        defaultOutputModes: data.defaultOutputModes || [],
+        skills: data.skills || [],
+        authentication: data.authentication || { type: '', description: '' },
+        privacy: data.privacy || { dataRetention: '', logPolicy: '' },
+        metadata: data.metadata || { author: '', website: '', documentation: '', updated: '' },
+        tags: data.tags || [],
+        price: data.price || 0,
+        currency: data.currency || 'USD',
+        sla: data.sla || 0.99,
+        domain: data.domain || 'General'
+      });
+      setStep('confirm');
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 生成首字母头像
+  const getInitials = (name) => {
+    return name
+      ? name.split(' ').map(word => word[0]).join('').toUpperCase().slice(0, 2)
+      : 'AG';
+  };
+
+  // 轮询任务状态
+  const pollStatus = async (tid) => {
+    try {
+      const response = await fetch(`${API_BASE}/status/${tid}`);
+
+      if (!response.ok) throw new Error('Failed to check status');
+
+      const data = await response.json();
+      setTaskStatus(data);
+
+      if (data.status === 'success') {
+        setSuccess(true);
+        setIsRegistering(false);
+        addLog(`Registration successful! Trust Score: ${data.trust_score}`, 'success');
+      } else if (data.status === 'failed' || data.status === 'error') {
+        setError(data.error || t.waus.errorRegister);
+        setIsRegistering(false);
+        addLog(`Registration failed: ${data.error}`, 'error');
+      } else {
+        if (data.progress) {
+          addLog(`Processing: ${data.progress}...`, 'info');
+        }
+        setTimeout(() => pollStatus(tid), 1500);
+      }
+    } catch (err) {
+      console.error('Polling error:', err);
+      setTimeout(() => pollStatus(tid), 3000);
+    }
+  };
+
+  // 提交注册
+  const handleRegister = async () => {
+    if (!formData.name || !formData.description) {
+      setError(t.waus.required);
+      return;
+    }
+
+    setIsRegistering(true);
+    setStep('processing');
+    setError(null);
+    setSuccess(null);
+    setLogs([]);
+    addLog(`Starting registration for: ${formData.name}`);
+
+    try {
+      const response = await fetch(`${API_BASE}/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          a2aVersion: formData.a2aVersion,
+          id: formData.id,
+          name: formData.name,
+          description: formData.description,
+          version: formData.version,
+          url: formData.url,
+          capabilities: formData.capabilities,
+          defaultInputModes: formData.defaultInputModes,
+          defaultOutputModes: formData.defaultOutputModes,
+          skills: formData.skills,
+          authentication: formData.authentication,
+          privacy: formData.privacy,
+          metadata: formData.metadata,
+          tags: formData.tags,
+          price: parseFloat(formData.price) || 0,
+          currency: formData.currency,
+          sla: parseFloat(formData.sla) || 0.99,
+          domain: formData.domain
+        })
+      });
+
+      // 处理 409 重复注册
+      if (response.status === 409) {
+        addLog('Agent already registered in the universe', 'warn');
+        setError('Duplicate Registration: This agent already exists.');
+        setIsRegistering(false);
+        return;
+      }
+
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.detail || t.waus.errorRegister);
+      }
+
+      const data = await response.json();
+      const newTaskId = data.task_id;
+      setTaskId(newTaskId);
+
+      addLog(`Task created. ID: ${newTaskId}`);
+      addLog('Added to security audit queue...');
+      pollStatus(newTaskId);
+
+    } catch (err) {
+      setError(err.message);
+      setIsRegistering(false);
+      addLog(`Error: ${err.message}`, 'error');
+    }
+  };
+
+  const handleInputChange = (field, value) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    setError(null);
+  };
+
+  return (
+    <div className="pt-24 pb-12 px-4 container mx-auto max-w-6xl relative z-10 min-h-screen">
+
+      {/* 头部标题 */}
+      <div className="text-center mb-12">
+        <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-gradient-to-br from-wau-primary/20 to-wau-secondary/20 mb-6 border border-wau-primary/30 backdrop-blur-sm">
+          <Zap className="w-8 h-8 text-wau-primary" />
+        </div>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-wau-primary to-wau-secondary">
+          {t.waus.title}
+        </h1>
+        <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          {t.waus.desc}
+        </p>
+      </div>
+
+      {/* 步骤 1: 发现 (Discovery) */}
+      {step === 'discovery' && (
+        <div className="max-w-xl mx-auto">
+          <div className="bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 p-8 shadow-2xl">
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-400 mb-2 ml-1">
+                {t.waus.urlLabel}
+              </label>
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Globe className="h-5 w-5 text-gray-500 group-focus-within:text-wau-primary transition-colors" />
+                </div>
+                <input
+                  type="url"
+                  value={targetUrl}
+                  onChange={(e) => setTargetUrl(e.target.value)}
+                  placeholder="https://api.example.com/a2a/agent-card"
+                  className="block w-full pl-12 pr-12 py-4 bg-black/50 border border-white/10 rounded-xl text-white placeholder-gray-600 focus:ring-2 focus:ring-wau-primary/50 focus:border-wau-primary/50 transition-all outline-none"
+                  onKeyDown={(e) => e.key === 'Enter' && handleDiscovery()}
+                />
+                <div className="absolute inset-y-0 right-2 flex items-center">
+                  <button
+                    onClick={handleDiscovery}
+                    disabled={loading}
+                    className="p-2 bg-white/5 hover:bg-white/10 rounded-lg text-gray-300 transition-colors"
+                  >
+                    {loading ? (
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    ) : (
+                      <Search className="w-5 h-5" />
+                    )}
+                  </button>
+                </div>
+              </div>
+              {error && (
+                <p className="mt-3 text-red-400 text-sm flex items-center gap-2">
+                  <X className="w-4 h-4" /> {error}
+                </p>
+              )}
             </div>
-          ))}
-        </div>
 
-        <div className="mb-20">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">{t.waus.featuredAgents}</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {t.waus.agentList.map((agent, i) => (
-              <div key={i} className="glass-card p-6 rounded-xl hover:bg-white/5 transition-all cursor-pointer group">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-wau-primary to-wau-secondary flex items-center justify-center">
-                    <Brain className="w-6 h-6 text-white" />
+            <button
+              onClick={handleDiscovery}
+              disabled={loading || !targetUrl}
+              className="w-full py-4 bg-gradient-to-r from-wau-primary to-wau-secondary rounded-xl text-white font-bold hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-wau-primary/20 flex items-center justify-center gap-2"
+            >
+              {loading ? (
+                <>
+                  <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  Scanning...
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-5 h-5" />
+                  {t.waus.urlBtn}
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* 步骤 2: 确认 (Confirm) - A2A Agent Card 完整信息 */}
+      {step === 'confirm' && agentData && (
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
+            {/* 头部 - 核心身份区 */}
+            <div className="p-6 border-b border-white/10">
+              <div className="flex items-start justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-wau-primary to-wau-secondary flex items-center justify-center text-2xl font-bold text-white shadow-inner">
+                    {getInitials(formData.name)}
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold">{agent.name}</h4>
-                    <p className="text-gray-400 text-sm">{agent.type}</p>
+                    <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+                      {formData.name}
+                      <span className="px-2 py-0.5 rounded text-xs bg-green-500/20 text-green-400 border border-green-500/30">
+                        A2A {t.waus.verified}
+                      </span>
+                    </h2>
+                    <p className="text-gray-400 font-mono text-sm mt-1">
+                      {formData.a2aVersion && `v${formData.a2aVersion}`}
+                      {formData.version && ` | ${t.waus.version}: ${formData.version}`}
+                    </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="w-2 h-2 rounded-full bg-green-400" />
-                  <span className="text-green-400 text-sm">{agent.status}</span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {agent.tags.map((tag, j) => (
-                    <span key={j} className="px-2 py-1 rounded-md bg-wau-primary/20 text-wau-primary text-xs">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                <button onClick={() => setStep('discovery')} className="text-gray-500 hover:text-white transition-colors">
+                  <X className="w-6 h-6" />
+                </button>
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
 
-        <div className="glass-card p-12 rounded-2xl">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {t.waus.stats.map((stat, i) => (
-              <div key={i}>
-                <div className="text-4xl font-bold text-gradient mb-2">{stat.value}</div>
-                <div className="text-gray-400">{stat.label}</div>
+            <div className="p-6 space-y-8">
+              {/* 两栏布局 */}
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* 左侧 - 能力与描述 */}
+                <div className="space-y-6">
+                  {/* 描述 */}
+                  <div>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                      {t.waus.descriptionLabel} <span className="text-wau-primary">*</span>
+                    </label>
+                    <textarea
+                      value={formData.description}
+                      onChange={(e) => handleInputChange('description', e.target.value)}
+                      rows={5}
+                      className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-wau-primary/50 outline-none transition-colors resize-none"
+                    />
+                    <p className="text-xs text-gray-500 mt-2">{t.waus.descriptionHint}</p>
+                  </div>
+
+                  {/* 标签 */}
+                  <div>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                      {t.waus.tagsLabel}
+                    </label>
+                    <div className="flex flex-wrap gap-2 p-3 bg-black/30 border border-white/10 rounded-lg min-h-[44px]">
+                      {formData.tags && formData.tags.map((tag, i) => (
+                        <span key={i} className="px-2 py-1 bg-wau-primary/20 text-wau-primary rounded text-xs">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* 输入输出模式 */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.inputModesLabel}
+                      </label>
+                      <div className="flex flex-wrap gap-1">
+                        {formData.defaultInputModes?.map((mode, i) => (
+                          <span key={i} className="px-2 py-1 bg-white/10 rounded text-xs text-gray-300">
+                            {mode}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.outputModesLabel}
+                      </label>
+                      <div className="flex flex-wrap gap-1">
+                        {formData.defaultOutputModes?.map((mode, i) => (
+                          <span key={i} className="px-2 py-1 bg-white/10 rounded text-xs text-gray-300">
+                            {mode}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 技能列表 */}
+                  {formData.skills && formData.skills.length > 0 && (
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.skillsTitle}
+                      </label>
+                      <div className="space-y-3">
+                        {formData.skills.map((skill, i) => (
+                          <div key={i} className="p-3 bg-black/30 border border-white/10 rounded-lg">
+                            <div className="flex items-center justify-between mb-2">
+                              <span className="text-white font-medium">{skill.name}</span>
+                            </div>
+                            <p className="text-gray-400 text-xs mb-2">{skill.description}</p>
+                            {skill.tags && skill.tags.length > 0 && (
+                              <div className="flex flex-wrap gap-1">
+                                {skill.tags.map((tag, j) => (
+                                  <span key={j} className="px-2 py-0.5 bg-wau-primary/10 text-wau-primary rounded text-xs">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* 右侧 - 认证、隐私、元数据 */}
+                <div className="space-y-6">
+                  {/* URL 显示 */}
+                  <div>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                      {t.waus.endpointLabel}
+                    </label>
+                    <div className="text-sm text-gray-400 font-mono break-all bg-black/50 p-3 rounded border border-white/5">
+                      {formData.url}
+                    </div>
+                  </div>
+
+                  {/* 认证信息 */}
+                  <div>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                      {t.waus.authType}
+                    </label>
+                    <div className="p-3 bg-black/30 border border-white/10 rounded-lg">
+                      <span className="text-white">{formData.authentication?.type || 'N/A'}</span>
+                      {formData.authentication?.description && (
+                        <p className="text-gray-500 text-xs mt-1">{formData.authentication.description}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* 隐私设置 */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.dataRetention}
+                      </label>
+                      <div className="p-2 bg-black/30 border border-white/10 rounded text-sm text-gray-300">
+                        {formData.privacy?.dataRetention || 'N/A'}
+                      </div>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.logPolicy}
+                      </label>
+                      <div className="p-2 bg-black/30 border border-white/10 rounded text-sm text-gray-300">
+                        {formData.privacy?.logPolicy || 'N/A'}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 元数据 */}
+                  <div>
+                    <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                      {t.waus.metadataTitle}
+                    </label>
+                    <div className="grid grid-cols-2 gap-3 text-sm">
+                      {formData.metadata?.author && (
+                        <div className="p-2 bg-black/30 border border-white/10 rounded">
+                          <span className="text-gray-500 text-xs block">{t.waus.author}</span>
+                          <span className="text-gray-300">{formData.metadata.author}</span>
+                        </div>
+                      )}
+                      {formData.metadata?.website && (
+                        <div className="p-2 bg-black/30 border border-white/10 rounded">
+                          <span className="text-gray-500 text-xs block">{t.waus.website}</span>
+                          <a href={formData.metadata.website} target="_blank" rel="noreferrer" className="text-wau-primary hover:underline">
+                            {formData.metadata.website}
+                          </a>
+                        </div>
+                      )}
+                      {formData.metadata?.documentation && (
+                        <div className="p-2 bg-black/30 border border-white/10 rounded col-span-2">
+                          <span className="text-gray-500 text-xs block">{t.waus.documentation}</span>
+                          <a href={formData.metadata.documentation} target="_blank" rel="noreferrer" className="text-wau-primary hover:underline break-all">
+                            {formData.metadata.documentation}
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* 商业设置 */}
+                  <div className="grid grid-cols-3 gap-4">
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.priceLabel}
+                      </label>
+                      <input
+                        type="number"
+                        value={formData.price}
+                        onChange={(e) => handleInputChange('price', e.target.value)}
+                        step="0.001"
+                        className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-wau-primary/50 outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        Currency
+                      </label>
+                      <select
+                        value={formData.currency}
+                        onChange={(e) => handleInputChange('currency', e.target.value)}
+                        className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-wau-primary/50 outline-none"
+                      >
+                        <option value="USD">USD</option>
+                        <option value="Token">Token</option>
+                        <option value="Free">Free</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        Domain
+                      </label>
+                      <input
+                        type="text"
+                        value={formData.domain}
+                        onChange={(e) => handleInputChange('domain', e.target.value)}
+                        className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-wau-primary/50 outline-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">
+                        {t.waus.slaLabel}
+                      </label>
+                      <input
+                        type="number"
+                        step="0.01"
+                        max="1"
+                        value={formData.sla}
+                        onChange={(e) => handleInputChange('sla', e.target.value)}
+                        className="w-full bg-black/30 border border-white/10 rounded-lg px-4 py-2 text-white focus:border-wau-primary/50 outline-none"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
+
+              {/* 底部按钮 */}
+              <div className="flex gap-4 pt-6 border-t border-white/5">
+                <button
+                  onClick={() => setStep('discovery')}
+                  className="px-6 py-4 rounded-xl border border-white/10 text-gray-300 hover:bg-white/5 transition-colors font-medium"
+                >
+                  {t.waus.cancelBtn}
+                </button>
+                <button
+                  onClick={handleRegister}
+                  disabled={isRegistering}
+                  className="flex-1 py-4 bg-gradient-to-r from-wau-primary to-wau-secondary rounded-xl text-white font-bold hover:opacity-90 transition-all disabled:opacity-50 flex items-center justify-center gap-2 shadow-lg shadow-wau-primary/20"
+                >
+                  {isRegistering ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      {t.waus.registering}
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles className="w-5 h-5" />
+                      {t.waus.submitBtn}
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-);
+      )}
+
+      {/* 步骤 3: 处理中 (Terminal) */}
+      {step === 'processing' && (
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-black rounded-xl border border-gray-800 shadow-2xl overflow-hidden font-mono text-sm h-[500px] flex flex-col">
+            <div className="bg-gray-900 px-4 py-2 flex items-center gap-2 border-b border-gray-800">
+              <div className="flex gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+              </div>
+              <span className="ml-2 text-gray-500 text-xs">root@wau:~/tasks/{taskId?.slice(0, 8)}</span>
+            </div>
+
+            <div className="flex-1 p-6 overflow-y-auto space-y-2">
+              {logs.map((log, i) => (
+                <div key={i} className={`${
+                  log.type === 'error' ? 'text-red-400' :
+                  log.type === 'success' ? 'text-green-400' :
+                  log.type === 'warn' ? 'text-yellow-400' :
+                  'text-gray-300'
+                }`}>
+                  <span className="opacity-40 mr-2">[{log.time}]</span>
+                  {log.msg}
+                </div>
+              ))}
+              {isRegistering && (
+                <div className="text-wau-primary animate-pulse mt-2">_</div>
+              )}
+            </div>
+
+            {/* 成功状态 */}
+            {success && (
+              <div className="p-6 border-t border-gray-800 bg-green-900/10">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-green-400 font-bold text-lg mb-1">{t.waus.successTitle}</h3>
+                    <p className="text-green-300/60 text-xs">{t.waus.successDesc}</p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      setStep('discovery');
+                      setTargetUrl('');
+                      setAgentData(null);
+                      setLogs([]);
+                    }}
+                    className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-xs rounded border border-gray-700 transition-colors"
+                  >
+                    {t.waus.viewAgent}
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* 错误状态 */}
+            {error && !isRegistering && (
+              <div className="p-6 border-t border-gray-800 bg-red-900/10">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-red-400 font-bold text-lg mb-1">Process Failed</h3>
+                    <p className="text-red-300/60 text-xs">{error}</p>
+                  </div>
+                  <button
+                    onClick={() => setStep('confirm')}
+                    className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white text-xs rounded border border-gray-700 transition-colors"
+                  >
+                    {t.waus.back}
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+    </div>
+  );
+};
 
 // WAUC 页面
 const WAUCPage = ({ t }) => (

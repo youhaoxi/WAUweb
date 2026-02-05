@@ -1,0 +1,85 @@
+{
+  "a2aVersion": "1.0.0",
+  "id": "did:agent:xplorealpha-data-expert-001",
+  "name": "XploreAlpha 数据洞察专家",
+  "description": "一个生产级的高级数据处理智能体，支持复杂的 A2A 协议交互，具备自动化清洗、统计建模及可视化建议能力。",
+  "version": "2.5.0",
+  "url": "https://api.shannon.run/v1/a2a/data-expert",
+  
+  "//_comment_1": "--- A2A 标准协议字段 ---",
+  "capabilities": [
+    "streaming",
+    "pushNotifications",
+    "asyncProcessing"
+  ],
+  "defaultInputModes": [
+    "application/json",
+    "text/csv",
+    "application/parquet"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/markdown",
+    "image/png"
+  ],
+  
+  "//_comment_2": "--- 核心技能定义 (符合 A2A 结构) ---",
+  "skills": [
+    {
+      "id": "skill:data:clean",
+      "name": "多维数据清洗",
+      "description": "识别并修复结构化数据中的离群值、重复项及格式错误。",
+      "tags": ["ETL", "数据质量"],
+      "examples": [
+        "请清洗这份包含 10 万行销售记录的 CSV 文件。",
+        "自动对齐这组不规范的日期格式。"
+      ],
+      "inputModes": ["text/csv", "application/json"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "skill:ai:predict",
+      "name": "时间序列预测",
+      "description": "基于历史数据进行趋势外推，预测未来 30 天的业务指标。",
+      "tags": ["机器学习", "预测"],
+      "examples": [
+        "预测下个月的订阅增长率。",
+        "根据过去一年的流量数据识别季节性趋势。"
+      ],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json", "text/markdown"]
+    }
+  ],
+
+  "//_comment_3": "--- 补充/找回的实验字段 (业务逻辑) ---",
+  "price": 0.05,
+  "currency": "USD",
+  "sla": 0.999,
+  "domain": "FinTech",
+  "tags": ["Production-Ready", "High-Performance", "XploreAlpha-Series"],
+  
+  "//_comment_4": "--- 安全与审计 (实验专用) ---",
+  "x_simulation_type": "security_audit_v2",
+  "x_trust_score_baseline": 0.95,
+
+  "//_comment_5": "--- 认证与策略 ---",
+  "authentication": {
+    "type": "bearer",
+    "realm": "XploreAlpha-Auth",
+    "description": "使用 XploreAlpha 平台颁发的 API KEY 进行访问。"
+  },
+  "privacy": {
+    "dataRetention": "24h",
+    "logPolicy": "encrypted",
+    "compliance": ["GDPR", "SOC2"]
+  },
+
+  "//_comment_6": "--- 维护元数据 ---",
+  "metadata": {
+    "author": "XploreAlpha Dev Team",
+    "contact": "dev@xplorealpha.com",
+    "website": "https://docs.shannon.run",
+    "updated": "2026-02-04T12:00:00Z",
+    "environment": "production"
+  }
+}
